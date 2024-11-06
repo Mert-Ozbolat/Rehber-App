@@ -71,13 +71,14 @@ header div button {
   background: white;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   font-size: 20px;
-  padding: 10px;
   display: grid;
   place-items: center;
   border-radius: 10px;
 }
 header div .ns {
-  width: 50px;
+  width: 80px;
+  color: white;
+  background-color: #6418c3;
 }
 @media (max-width: 650px) {
   header div .ns {
@@ -88,7 +89,6 @@ header div .add {
   display: flex;
   gap: 10px;
   background: #6418c3;
-  color: white;
   border-radius: 10px;
   padding: 10px 20px;
 }
@@ -205,6 +205,7 @@ main {
 .modal {
   position: fixed;
   background: rgba(0, 0, 0, 0.638);
+  color: black;
   inset: 0;
   display: grid;
   place-items: center;

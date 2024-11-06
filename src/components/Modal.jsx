@@ -2,14 +2,15 @@ import { IoClose } from "react-icons/io5";
 import Field from "./Field";
 import axios from "axios";
 
+
 const Modal = ({ isModalOpen, close, setContacts, editItem }) => {
     console.log("DÜZNELENİCEK ELEMAN", editItem);
 
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const formData = new FormData(e.target);
 
+        const formData = new FormData(e.target);
         const newContact = Object.fromEntries(formData.entries());
 
         if (!editItem) {
@@ -29,7 +30,6 @@ const Modal = ({ isModalOpen, close, setContacts, editItem }) => {
                     );
                 });
         }
-
         close();
     };
 

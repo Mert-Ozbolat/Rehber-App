@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
 
-@import "variables";
-@import "deafault";
+@import "variables.scss";
+@import "default.scss";
 
 .app {
     padding: 10px;
@@ -32,14 +32,15 @@ header {
             background: white;
             box-shadow: $shadow-2;
             font-size: 20px;
-            padding: 10px;
             display: grid;
             place-items: center;
             border-radius: 10px;
         }
 
         .ns {
-            width: 50px;
+            width: 80px;
+            color: white;
+            background-color: $purple;
 
             @media (max-width: 650px) {
                 display: none;
@@ -50,7 +51,6 @@ header {
             display: flex;
             gap: 10px;
             background: $purple;
-            color: white;
             border-radius: 10px;
             padding: 10px 20px;
 
@@ -188,6 +188,7 @@ main {
 .modal {
     position: fixed;
     background: rgba(0, 0, 0, 0.638);
+    color: black;
     inset: 0;
     display: grid;
     place-items: center;
